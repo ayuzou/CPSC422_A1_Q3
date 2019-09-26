@@ -18,6 +18,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        //List<ActionEnum> actions = new ArrayList<ActionEnum>();
         List<Integer> actions = new ArrayList<Integer>();
         List<Integer> obs = new ArrayList<Integer>();
 
