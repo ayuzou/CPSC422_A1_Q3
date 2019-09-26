@@ -18,14 +18,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        List<State> initialBS = new ArrayList<State>();
         List<Integer> actions = new ArrayList<Integer>();
         List<Integer> obs = new ArrayList<Integer>();
 
-	    List<State> beliefState = calculateBeliefState(initialBS, actions, obs);
+	    List<State> beliefState = calculateBeliefState(State.initialBS, actions, obs);
 
 	    for (State state : beliefState) {
-            System.out.println(state.returnCoordinate() + ": " + state.value);
+            System.out.println(state.getCoordinate() + ": " + state.value);
         }
     }
 }

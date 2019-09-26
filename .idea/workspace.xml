@@ -48,46 +48,50 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="526" />
+          <entry key="java" value="1418" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="526" />
+          <entry key="JAVA" value="1418" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Q3/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="244">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#357#364#0" expanded="true" />
-                <element signature="e#423#432#0" expanded="true" />
-                <element signature="e#487#496#0" expanded="true" />
+                <element signature="e#524#531#0" expanded="true" />
+                <element signature="e#723#732#0" expanded="true" />
+                <element signature="e#777#786#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Q3/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            <state relative-caret-position="254">
+              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
+                <element signature="e#1385#1386#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,11 +106,21 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wallProbability</find>
+      <find>returnCoordinate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>getWallProbability</replace>
+      <replace>getCoordinate</replace>
+    </replaceStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Q3/State.java" />
         <option value="$PROJECT_DIR$/src/Q3/Main.java" />
+        <option value="$PROJECT_DIR$/src/Q3/State.java" />
       </list>
     </option>
   </component>
@@ -219,31 +233,35 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Q3/State.java">
+    <entry file="file://$PROJECT_DIR$/src/Q3/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="244">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#524#531#0" expanded="true" />
+            <element signature="e#723#732#0" expanded="true" />
+            <element signature="e#777#786#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Q3/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Q3/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="254">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#357#364#0" expanded="true" />
-            <element signature="e#423#432#0" expanded="true" />
-            <element signature="e#487#496#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
           </folding>
         </state>
       </provider>
