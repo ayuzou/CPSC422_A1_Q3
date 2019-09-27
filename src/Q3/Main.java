@@ -11,6 +11,7 @@ public class Main {
         double[][] curBS = new double[3][4];
         double sumForNorm = 0;
         for (int a = 0; a < actions.size(); a++) {
+            curBS = new double[3][4];
             for (int i = 0; i < prevBS.length; i++) {
                 for (int j = 0; j < prevBS[i].length; j++) {
                     if (i == 1 && j == 1) continue;
@@ -27,18 +28,15 @@ public class Main {
     }
 
     public static void normalize(double[][] curBS, double sumForNum) {
-        double total = 0;
         for (int i = 0; i < curBS.length; i++) {
             for (int j = 0; j < curBS[i].length; j++) {
                 curBS[i][j] /= sumForNum;
-                total += curBS[i][j];
             }
         }
     }
 
     private static double updateBS(double[][] prevBS, int row, int col, int action, int obs) {
         double wallProb = getWallProb(row, col, obs);
-
         return wallProb * calculateSum(prevBS, row, col, action);
     }
 
@@ -175,7 +173,6 @@ public class Main {
         // right
         if (row == 0 && col == 3 && action == 4) {
             neighbours.put(new Pair<Integer, Integer>(0, 2), 0.8);
-
         }
 
         // (1,0)
@@ -383,7 +380,7 @@ public class Main {
 //        prevBS[2][2] = (double)1/9;
 //        prevBS[2][3] = (double)1/9;
 
-        prevBS[0][0] = 1;
+        prevBS[0][0] = 0;
         prevBS[0][1] = 0;
         prevBS[0][2] = 0;
         prevBS[0][3] = 0;
@@ -391,16 +388,19 @@ public class Main {
         prevBS[1][1] = 0;
         prevBS[1][2] = 0;
         prevBS[1][3] = 0;
-        prevBS[2][0] = 0;
+        prevBS[2][0] = 1;
         prevBS[2][1] = 0;
         prevBS[2][2] = 0;
         prevBS[2][3] = 0;
 
+        // 1 = up, 2 = down, 3 = left, 4 = right
         List<Integer> actions = new ArrayList<Integer>();
         actions.add(1);
         actions.add(4);
         actions.add(4);
         actions.add(4);
+
+        // 0 = end, 1 = 1-wall, 2 = 2-wall
         List<Integer> obs = new ArrayList<Integer>();
         obs.add(2);
         obs.add(2);
@@ -409,7 +409,7 @@ public class Main {
 
 	    double[][] beliefState = calculateBeliefState(prevBS, actions, obs);
 
-	    // round to 3 decimal places
+	    // round to 4 decimal places
         DecimalFormat df = new DecimalFormat("#.####");
 
 	    for (int i = 0; i < beliefState.length; i++) {
